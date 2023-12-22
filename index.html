@@ -28,6 +28,7 @@
             border-radius: 10px;
             transition: transform 0.3s ease-in-out , border 0.3s ease-in-out;
             position: relative;
+            animation: rotateBorderColor 10s infinite linear;
         }
         .profile-imge{
             width: 100%;
@@ -112,7 +113,24 @@
            height: 81%;
         }
 
-
+        /*Add keyframes for rotating border color */
+        @keyframes rotateBorderColor {
+            0% {
+                box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+            }
+            25% {
+                box-shadow: 0 0 40px rgba(255, 204, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(0, 204, 0, 0.5);
+            }
+            75% {
+                box-shadow: 0 0 40px rgba(51, 153, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 40px rgba(255, 204, 0, 0.5);
+            }
+        }
 
     </style>
 </head>
